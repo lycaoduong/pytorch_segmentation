@@ -1,0 +1,15 @@
+projectname : 'u2net_fire_smoke'
+
+num_gpus : 1
+img_size : 256
+
+train_params :
+    optimizer : 'sam'
+    loss: 'focal'
+    num_epochs : 350
+    num_workers : 16
+    batch_size : 256
+
+dataset_params :
+    num_classes: 3
+    channels: 3

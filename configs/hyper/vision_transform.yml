@@ -1,0 +1,10 @@
+# Vision Augmentation Transform Parameters
+
+gray_scale: 0.2
+rotate: 0.3
+scale: 0.3
+scale_range: [1.1, 1.7, 0.1]
+flipx: 0.3
+flipy: 0.0
+brightness: 0.3
+colorjitter: 0.2

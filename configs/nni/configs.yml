@@ -1,0 +1,17 @@
+authorName: lcd
+experimentName: visionin_segmentation_nia
+trialConcurrency: 1
+maxExecDuration: 99999d
+maxTrialNum: 2
+trainingServicePlatform: local
+searchSpacePath: lycaoduong_workspace/segmentation_ly_visionin/configs/nni/search_space.json
+logDir: lycaoduong_workspace/nni_logs
+useAnnotation: false
+localConfig:
+  useActiveGpu: true
+tuner:
+  builtinTunerName: GridSearch
+trial:
+  codeDir: lycaoduong_workspace/segmentation_ly_visionin
+  command: python train.py #--request-from-nni
+  gpuNum: 1

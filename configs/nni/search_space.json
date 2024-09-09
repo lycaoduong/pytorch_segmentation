@@ -1,0 +1,4 @@
+{
+    "model":{"_type":"choice","_value":["u2netp", "Swin-S", "effFomer-L1"]},
+    "optimizer":{"_type":"choice","_value":["adamw"]}
+}
