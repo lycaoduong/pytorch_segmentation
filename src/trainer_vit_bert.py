@@ -4,7 +4,7 @@ import json
 from utils.utils import YamlRead
 from utils import transform as tr
 from torchvision import transforms
-from utils.data_loader import load_data_hyudai_v3
+from utils.loader import load_data_hyudai_v3
 from torch.utils.data import DataLoader
 from networks.u2net.u2net import U2NET, U2NETP
 from networks.VitSeg_Visionin.vitseg_visionin import VitSegVisionin

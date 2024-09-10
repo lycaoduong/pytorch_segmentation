@@ -4,7 +4,7 @@ import json
 from utils.utils import YamlRead
 from utils import transform as tr
 from torchvision import transforms
-from utils.data_loader import load_visionin_wood
+from utils.loader import load_visionin_wood
 from torch.utils.data import DataLoader
 from networks.u2net.u2net import U2NET, U2NETP
 from networks.VitSeg_Visionin.vitseg_visionin import VitSegVisionin
@@ -81,7 +81,8 @@ class Trainer(object):
         self.val_dir = dataset_configs.val_dir
         self.class_name = dataset_configs.cls
         self.class_w = dataset_configs.cls_w
-        self.num_class = len(self.class_name)
+        # self.num_class = len(self.class_name)
+        self.num_class = dataset_configs.num_cls
         self.mean = dataset_configs.mean
         self.std = dataset_configs.std
 
@@ -112,7 +113,7 @@ class Trainer(object):
         # training_set = load_from_csv(csv_dir=self.train_dir, img_dir=self.root_dir, nc=self.num_class, transform=transforms.Compose(train_transforms))
         #training_set = load_data_hyudai_v2(root_dir=self.train_dir, class_name=self.class_name, transform=transforms.Compose(train_transforms), db=False)
         #training_set = load_data_json_nia(root_dir=self.root_dir, cls_dic=self.class_name, set_name='train', transform=transforms.Compose(train_transforms))
-        training_set = load_visionin_wood(root_dir=self.train_dir, class_name=self.class_name,
+        training_set = load_visionin_wood(root_dir=self.train_dir, class_name=self.class_name, nc=self.num_class,
                                           transform=transforms.Compose(train_transforms), db=False)
 
         train_params = {
@@ -134,7 +135,7 @@ class Trainer(object):
         #                              transform=transforms.Compose(validation_transforms))
         # val_set = load_data_hyudai_v2(root_dir=self.val_dir, class_name=self.class_name, transform=transforms.Compose(validation_transforms))
         #val_set = load_data_json_nia(root_dir=self.root_dir, cls_dic=self.class_name, set_name='val', transform=transforms.Compose(validation_transforms))
-        val_set = load_visionin_wood(root_dir=self.val_dir, class_name=self.class_name,
+        val_set = load_visionin_wood(root_dir=self.val_dir, class_name=self.class_name, nc=self.num_class,
                                      transform=transforms.Compose(validation_transforms))
 
         val_params = {
