@@ -1,0 +1,11 @@
+datasetname : 'skin'
+
+root_dir: 'C:/Users/workspace/dataset/skin/2017/'
+train_dir: 'C:/Users/workspace/dataset/skin/2017/train.csv'
+val_dir: 'C:/Users/workspace/dataset/skin/2017/val.csv'
+
+mean : [0.0, 0.0, 0.0]
+std : [1.0, 1.0, 1.0]
+
+num_cls : 3
+cls : {0: 'mel', 1: 'ker'}

@@ -1,0 +1,22 @@
+datasetname : 'sam_ha'
+
+root_dir: 'D:/lycaoduong/workspace/datasets/others/2023_04_24_Data_Train'
+train_dir: 'D:/lycaoduong/workspace/datasets/others/2023_04_24_Data_Train'
+val_dir: 'D:/lycaoduong/workspace/datasets/others/2023_04_24_Data_Train'
+
+mean : [0.0, 0.0, 0.0]
+std : [1.0, 1.0, 1.0]
+
+num_cls : 6
+cls : {'Crack': 1, 'Solder Void': 2, 'Delamination': 3, 'Power Terminal Bonding': 4, 'Chip Size': 5, 'Solder Over': 6}
+
+#cls_w : [0.15, 0.25, 0.15, 0.15, 0.15, 0.15]
+cls_w : None
+
+color_dic : [[0,   0,   0],
+            [241,  90, 255],
+            [158,  7,  66],
+            [64, 243,   0],
+            [232,  46,  62],
+            [59,  30, 247],
+            [67, 250, 250]]

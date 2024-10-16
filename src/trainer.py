@@ -74,7 +74,7 @@ class Trainer(object):
             json.dump(train_opt.__dict__, f, indent=2)
 
         # Read dataset
-        dataset_configs = YamlRead(f'configs/dataset_configs/{self.dataset}.yml')
+        dataset_configs = YamlRead(f'configs/db_configs/{self.dataset}.yml')
         self.datasetname = dataset_configs.datasetname
         self.root_dir = dataset_configs.root_dir
         self.train_dir = dataset_configs.train_dir

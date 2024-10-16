@@ -1,0 +1,11 @@
+datasetname : 'sam_ha'
+
+root_dir: 'D:/lycaoduong/workspace/datasets/others/Hyundai_2class'
+train_dir: 'D:/lycaoduong/workspace/datasets/others/Hyundai_2class/train'
+val_dir: 'D:/lycaoduong/workspace/datasets/others/Hyundai_2class/val'
+
+mean : [0.0, 0.0, 0.0]
+std : [1.0, 1.0, 1.0]
+
+num_cls : 1
+cls : {0: 'defect'}

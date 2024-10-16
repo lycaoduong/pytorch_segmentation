@@ -1,0 +1,9 @@
+datasetname : 'smoke'
+
+root_dir: 'C:/work/dataset/visionin_fire_smoke/'
+
+mean : [0.4264, 0.4588, 0.4730]
+std : [0.2093, 0.1969, 0.1993]
+
+num_cls : 1
+cls : {0: 'smoke'}

@@ -1,0 +1,22 @@
+datasetname : 'visionin_samsung_task3'
+
+root_dir: 'D:/visionin/workspace/datasets/samsung_house/Samsung/task6/seg_300'
+train_dir: 'D:/visionin/workspace/datasets/samsung_house/Samsung/task6/seg_300/train'
+val_dir: 'D:/visionin/workspace/datasets/samsung_house/Samsung/task6/seg_300/valid'
+
+mean : [0.0, 0.0, 0.0]
+std : [1.0, 1.0, 1.0]
+
+num_cls : 5
+cls : {'helmet': 1, 'safety_belt': 2, 'hook': 3, 'cable': 4, 'human': 5, 'safety belt': 2, 'cabel': 4}
+
+#cls_w : [0.3, 0.3, 0.2, 0.2]
+cls_w : None
+
+color_dic : [[0,   0,   0],
+            [241,  90, 255],
+            [158,  7,  66],
+            [64, 243,   0],
+            [232,  46,  62],
+            [59,  30, 247],
+            [67, 250, 250]]

@@ -1,0 +1,65 @@
+datasetname : 'Visionin_NIA'
+
+train_dir: '../../NIA-35/cvlab_share/220818/train.txt'
+val_dir: '../../NIA-35/cvlab_share/220818/val.txt'
+root_dir: '../../NIA-35/cvlab_share/220818/'
+
+mean : [0.0, 0.0, 0.0]
+std : [1.0, 1.0, 1.0]
+
+num_cls : 31
+
+cls : {'vehicle': 1, 'bus': 2, 'truck': 3, 'policecar': 4,
+       'ambulance': 5, 'schoolbus': 6, 'othercar': 7,
+       'motorcycle': 8, 'bicycle': 9, 'twowheeler': 10,
+       'pedestrian': 11, 'rider': 12, 'freespace': 13,
+       'curb': 14, 'sidewalk': 15, 'crosswalk': 16,
+       'safetyzone': 17, 'speedbump': 18, 'roadmark': 19,
+       'whitelane': 20, 'yellowlane': 21, 'bluelane': 22,
+       'redlane': 23, 'stoplane': 24, 'trafficsign': 25,
+       'trafficlight': 26, 'constructionguide': 27, 'trafficdrum': 28,
+       'rubbercone': 29, 'warningtriangle': 30, 'fense': 31}
+
+color : {1: '#ff5af1', 2: '#42079e', 3: '#00f340', 4: '#3e2ee8',
+         5: '#f71e3b', 6: '#fafa43', 7: '#c81e8d',
+         8: '#ffff99', 9: '#f8abff', 10: '#00b6ff',
+         11: '#ff00e9', 12: '#641eff', 13: '#09a1b5',
+         14: '#50b462', 15: '#764eb0', 16: '#ff8db5',
+         17: '#00cfff', 18: '#863b8d', 19: '#f81c51',
+         20: '#ffbc7b', 21: '#ff6400', 22: '#98ff8d',
+         23: '#7ba518', 24: '#6aa391', 25: '#f15a29',
+         26: '#00e9c5', 27: '#fed145', 28: '#32e69b',
+         29: '#8899b3', 30: '#99004c', 31: '#f7ea6e'}
+
+color_dic : [[0,   0,   0],
+            [241,  90, 255],
+            [158,  7,  66],
+            [64, 243,   0],
+            [232,  46,  62],
+            [59,  30, 247],
+            [67, 250, 250],
+            [141,  30, 200],
+            [153, 255, 255],
+            [255, 171, 248],
+            [255, 182,   0],
+            [233,   0, 255],
+            [255,  30, 100],
+            [181, 161,   9],
+            [98, 180,  80],
+            [176,  78, 118],
+            [181, 141, 255],
+            [255, 207,   0],
+            [141,  59, 134],
+            [81,  28, 248],
+            [123, 188, 255],
+            [0, 100, 255],
+            [141, 255, 152],
+            [24, 165, 123],
+            [145, 163,106],
+            [41,  90, 241],
+            [197, 233,   0],
+            [69, 20, 254],
+            [155, 230,  50],
+            [179, 153, 136],
+            [76,   0, 153],
+            [110, 234, 247]]

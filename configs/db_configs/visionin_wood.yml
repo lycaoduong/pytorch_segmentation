@@ -1,0 +1,22 @@
+datasetname : 'visionin_wood'
+
+root_dir: 'D:/visionin/workspace/datasets/visionin_nas/wood/231010/folder1'
+train_dir: 'D:/visionin/workspace/datasets/visionin_nas/wood/231010/folder1'
+val_dir: 'D:/visionin/workspace/datasets/visionin_nas/wood/231010/folder6'
+
+mean : [0.0, 0.0, 0.0]
+std : [1.0, 1.0, 1.0]
+
+num_cls : 4
+cls : {'Wood_H': 1, 'Wood_V': 2, 'Screw': 3, 'Hole': 4}
+
+cls_w : [0.2, 0.2, 0.3, 0.3]
+#cls_w : None
+
+color_dic : [[0,   0,   0],
+            [241,  90, 255],
+            [158,  7,  66],
+            [64, 243,   0],
+            [232,  46,  62],
+            [59,  30, 247],
+            [67, 250, 250]]

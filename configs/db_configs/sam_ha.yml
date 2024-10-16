@@ -1,0 +1,11 @@
+datasetname : 'sam_ha'
+
+root_dir: 'C:/Users/workspace/dataset/ha'
+train_dir: 'C:/Users/workspace/dataset/ha/A4_Bscan'
+val_dir: 'C:/Users/workspace/dataset/ha/A5_Bscan'
+
+mean : [0.0, 0.0, 0.0]
+std : [1.0, 1.0, 1.0]
+
+num_cls : 1
+cls : {0: 'bottom_layer'}
