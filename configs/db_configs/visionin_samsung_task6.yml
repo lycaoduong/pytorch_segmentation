@@ -8,7 +8,7 @@ mean : [0.0, 0.0, 0.0]
 std : [1.0, 1.0, 1.0]
 
 num_cls : 5
-cls : {'helmet': 1, 'safety_belt': 2, 'hook': 3, 'cable': 4, 'human': 5, 'safety belt': 2, 'cabel': 4}
+cls : {'helmet': 1, 'safety_belt': 2, 'hook': 3, 'cable': 4, 'human': 5, 'safety belt': 2}
 
 #cls_w : [0.3, 0.3, 0.2, 0.2]
 cls_w : None
